@@ -73,3 +73,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'nodeclient'@'localhost';
 flush privileges;
 ```
 
+In order to incorporate the new CRUD changes, please execute the following SQL queries:
+
+alter table players add column playerValue float not null;
+alter table players add column playerranking varchar(20) not null;
